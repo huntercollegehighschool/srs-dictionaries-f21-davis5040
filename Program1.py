@@ -16,4 +16,10 @@ charcount("The thing.")
 '''
 
 def charcount(message):
-  pass  # delete this line when you start writing your code
+  a = {}
+  lower = message.lower()
+  for x in lower:
+    a[x] = lower.count(x)
+  return a
+  
+  
